@@ -12,6 +12,7 @@ public class TwoSum {
             if (seen.containsKey(x))                // if x exists in the map, that means we have found a sum that results our target
                                                     // because x + the current number = target
                 return new int[]{seen.get(x), i};
+
             seen.put(numbers[i], i);                // if x does not exist in the map, we put the current number in the map
         }
         return new int[]{};
